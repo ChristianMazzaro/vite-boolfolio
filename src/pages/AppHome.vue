@@ -1,4 +1,4 @@
-<script>
+<!-- <script>
 import HeaderComponent from './components/HeaderComponent.vue'
 import MainComponent from './components/MainComponent.vue'
 import FooterComponent from './components/FooterComponent.vue'
@@ -20,10 +20,25 @@ export default{
 
 <template>
     <HeaderComponent/>
-    <!-- <router-link :to="{ Home: item.routeHome}"></router-link> -->
     <MainComponent/>
     <FooterComponent/>
 </template>
 
+<style scoped>
+</style> -->
+
+<script>
+export default{
+    data(){
+        return{
+
+        }
+    },
+
+}
+</script>
+<template>
+
+</template>
 <style scoped>
 </style>

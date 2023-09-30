@@ -79,9 +79,12 @@ export default{
                 <h5>
                     contenuto del progetto:
                 </h5>
-                <p>
+                <p class="content-container">
                     {{ project.content }}
                 </p>
+                <div class="link-container">
+                    <router-link :to="{name:'project', params:{id:project.id}}">Progetto</router-link>
+                </div>
             </div>
         </div>
         <div class="button-container">
@@ -95,11 +98,12 @@ export default{
     </section>
 </template>
 
-<style>
+<style scoped>
 
     h3{
         color: rebeccapurple;
     }
+
     p{
         color: green;
     }
@@ -113,11 +117,25 @@ export default{
         width: calc((100% / 3) - 40px);
         border: 3px solid grey;
         margin: 10px;
+        position: relative;
+    }
+
+    .content-container{
+       padding: 20px;
     }
 
     .button-container{
         display:flex;
         justify-content: space-between;
         padding: 0 40px 0 0;
+    }
+
+    .link-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        left: 40%;
+        bottom: 5px;
     }
 </style>

@@ -20,10 +20,10 @@ export default{
 
 <template>
     <HeaderComponent/>
-    <!-- <router-link :to="{ Home: item.routeHome}"></router-link> -->
     <MainComponent/>
     <FooterComponent/>
 </template>
 
-<style scoped>
+<style>
+
 </style>
